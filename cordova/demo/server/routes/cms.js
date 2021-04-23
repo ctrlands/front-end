@@ -20,8 +20,8 @@ router.post('/', (req, res, next) => {
   let isquery = req.body.qrystatus; // 是否查询状态
   let current_page = req.body.page ? req.body.page : 0; // 当前页码，默认为1
   let per_page_total = 15; // 每页显示数量，默认为15
-  
-  
+
+
 
   let all_page_total; // 总页数
   let all_total; // 总数量
@@ -30,7 +30,7 @@ router.post('/', (req, res, next) => {
   let orderType; // 排序方式, 升序/降序
 
   let offsetNum = per_page_total * current_page; // 偏移量
-  
+
   let qrysqlcount = `SELECT COUNT(pkg_name) AS counts FROM apps_name WHERE ${type} = '${keyword}'`; // 统计查询结果数量，分页使用
   // let pageQuerySql = 'SELECT * FROM apps_name WHERE' + type + ' = ' + keyword + ' ORDER BY ' + order + ' ' + orderType + ' LIMIT ' + per_page_total + ' OFFSET ' + per_page_total + '*' + current_page; // 关键词查询+排序+类别
 
@@ -69,7 +69,7 @@ router.post('/', (req, res, next) => {
               'ASC'
           }
           // let pageQuerySql = `SELECT * FROM apps_name WHERE ${type} = '${keyword}' ORDER BY '${order}' ${orderType} LIMIT  ${per_page_total}  OFFSET ${offsetNum}`; // 关键词查询+排序+类别
-  
+
           let pageQuerySql = `SELECT * FROM apps_name WHERE ${type} LIKE '%${keyword}%' ORDER BY ${order} ${orderType} LIMIT ${per_page_total} OFFSET ${offsetNum}`; // 关键词查询+排序+类别
 
           console.log(pageQuerySql);
@@ -125,7 +125,7 @@ router.post('/', (req, res, next) => {
                 'ASC'
             }
             let pageQuerySql = 'SELECT * FROM apps_name ORDER BY ' + order + ' ' + orderType + ' LIMIT ' + per_page_total + ' OFFSET ' + per_page_total * current_page;
-            
+
             connection.query(pageQuerySql, '', function (err, datas) {
               if (err) {
                 res.send(err).end(); // 数据库连接异常
@@ -141,21 +141,15 @@ router.post('/', (req, res, next) => {
                 connection.release();
               }
             });
-
           }
         });
-
       }
-
-
-
     }
-
   });
 
 });
 
-router.get('/', (req, res, next) => {});
+router.get('/', (req, res, next) => { });
 
 
 // 创建文件夹

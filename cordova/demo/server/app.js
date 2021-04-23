@@ -7,7 +7,6 @@ var fileStore = require('session-file-store')(session);
 var logger = require('morgan');
 
 var indexRouter = require('./routes/index');
-var usersRouter = require('./routes/users');
 var sqlTestRouter = require('./routes/sqls');
 
 var uploadRouter = require('./routes/upload');
@@ -20,7 +19,6 @@ var nullRouter = require('./routes/null');
 var queryRouter = require('./routes/query');
 
 var cmsRouter = require('./routes/cms');
-var downloadRouter = require('./routes/download');
 
 var app = express();
 
@@ -82,7 +80,6 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/default', express.static('D:/upload/'));
 
 app.use('/', indexRouter);
-app.use('/users', usersRouter);
 app.use('/sql', sqlTestRouter);
 app.use('/theme', themeRouter);
 app.use('/themeList', themeListRouter);
@@ -93,7 +90,6 @@ app.use('/upload', uploadRouter);
 app.use('/null', nullRouter);
 
 app.use('/cms', cmsRouter);
-app.use('/download', downloadRouter);
 
 
 app.use((req, res, next) => {
