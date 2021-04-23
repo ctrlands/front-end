@@ -1,0 +1,17 @@
+.common-card {
+  margin: 8px;
+  background-color: #fff;
+  border-radius: 4px;
+}
+.common-card_content {
+  padding: 8px;
+}
+.common-popup {
+  display: flex;
+}
+.common-popup_content {
+  flex: 1;
+  overflow-y: auto;
+  padding-top: 42px;
+  -webkit-overflow-scrolling: touch;
+}

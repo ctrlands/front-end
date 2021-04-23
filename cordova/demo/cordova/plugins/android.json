@@ -1,0 +1,62 @@
+{
+  "prepare_queue": {
+    "installed": [],
+    "uninstalled": []
+  },
+  "config_munge": {
+    "files": {}
+  },
+  "installed_plugins": {
+    "cordova-plugin-whitelist": {
+      "PACKAGE_NAME": "com.ctrlands.demo"
+    },
+    "cordova-plugin-statusbar": {
+      "PACKAGE_NAME": "com.ctrlands.demo"
+    },
+    "cordova-plugin-android-permissions": {
+      "PACKAGE_NAME": "com.ctrlands.demo"
+    },
+    "cordova-plugin-file": {
+      "PACKAGE_NAME": "com.ctrlands.demo"
+    },
+    "cordova-plugin-file-transfer": {
+      "PACKAGE_NAME": "com.ctrlands.demo"
+    },
+    "cordova-plugin-camera": {
+      "ANDROID_SUPPORT_V4_VERSION": "27.+",
+      "PACKAGE_NAME": "com.ctrlands.demo"
+    },
+    "cordova-plugin-device": {
+      "PACKAGE_NAME": "com.ctrlands.demo"
+    },
+    "cordova-sqlite-storage": {
+      "PACKAGE_NAME": "com.ctrlands.demo"
+    },
+    "cordova-plugin-splashscreen": {
+      "PACKAGE_NAME": "com.ctrlands.demo"
+    },
+    "cordova-plugin-appavailability": {
+      "PACKAGE_NAME": "com.ctrlands.demo"
+    },
+    "cordova-plugin-file-opener2": {
+      "ANDROID_SUPPORT_V4_VERSION": "27.+",
+      "PACKAGE_NAME": "com.ctrlands.demo"
+    },
+    "com.lampa.startapp": {
+      "PACKAGE_NAME": "com.ctrlands.demo"
+    },
+    "cordova-plugin-backbutton": {
+      "PACKAGE_NAME": "com.ctrlands.demo"
+    },
+    "cordova-plugin-media": {
+      "PACKAGE_NAME": "com.ctrlands.demo"
+    },
+    "cordova-plugin-ionic-keyboard": {
+      "PACKAGE_NAME": "com.ctrlands.demo"
+    },
+    "cordova-plugin-ionic-webview": {
+      "PACKAGE_NAME": "com.ctrlands.demo"
+    }
+  },
+  "dependent_plugins": {}
+}

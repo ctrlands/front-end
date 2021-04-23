@@ -1,0 +1,30 @@
+[
+    {
+        "id": "1",
+        "icon": "home-o",
+        "name": "首页",
+        "url": "/home",
+        "badge": 0
+    },
+    {
+        "id": "2",
+        "icon": "apps-o",
+        "name": "分类",
+        "url": "/category",
+        "badge": 0
+    },
+    {
+        "id": "3",
+        "icon": "shopping-cart-o",
+        "name": "购物车",
+        "url": "/shopping-cart",
+        "badge": 1
+    },
+    {
+        "id": "4",
+        "icon": "user-o",
+        "name": "我的",
+        "url": "/mine",
+        "badge": 0
+    }
+]
